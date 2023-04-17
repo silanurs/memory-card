@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.0c91cc49.css",
+    "main.js": "/memory-card/static/js/main.9b6b50c1.js",
+    "static/js/787.d6a8b40f.chunk.js": "/memory-card/static/js/787.d6a8b40f.chunk.js",
+    "static/media/stromy.png": "/memory-card/static/media/stromy.dbace6f52bb48b95c4f4.png",
+    "static/media/background2.jpg": "/memory-card/static/media/background2.9309e380271ecb56610a.jpg",
+    "static/media/Helia.png": "/memory-card/static/media/Helia.c798c3fc11dfd165ecab.png",
+    "static/media/tecna.jpeg": "/memory-card/static/media/tecna.6b834e131592ff6a986f.jpeg",
+    "static/media/queenMarion.jpeg": "/memory-card/static/media/queenMarion.82246edefd16c6b72760.jpeg",
+    "static/media/roxy.jpeg": "/memory-card/static/media/roxy.2eddf39b72dfea619c45.jpeg",
+    "static/media/nebula.jpeg": "/memory-card/static/media/nebula.d9793b9c36be5e02d8cf.jpeg",
+    "static/media/kiko.jpeg": "/memory-card/static/media/kiko.bc6a84435ecddbfb7fc4.jpeg",
+    "static/media/Sky.png": "/memory-card/static/media/Sky.e5790fc97ac27e7f4685.png",
+    "static/media/stella.jpeg": "/memory-card/static/media/stella.7953c2c9404e53cae2b5.jpeg",
+    "static/media/queenLuna.jpeg": "/memory-card/static/media/queenLuna.a8022d44ed33c2739042.jpeg",
+    "static/media/darcy.jpeg": "/memory-card/static/media/darcy.bf7bfab8b0c06acdb9ae.jpeg",
+    "static/media/musa.jpeg": "/memory-card/static/media/musa.0907a4fa44b100df1b9c.jpeg",
+    "static/media/aisha.jpeg": "/memory-card/static/media/aisha.d7b34a9c65a5b611f394.jpeg",
+    "static/media/Acheron.jpeg": "/memory-card/static/media/Acheron.abd9ef73158ae9386652.jpeg",
+    "static/media/flora.jpeg": "/memory-card/static/media/flora.1a7a9e91885ce7066624.jpeg",
+    "static/media/Layla.jpeg": "/memory-card/static/media/Layla.dab763ce3e9f85255b63.jpeg",
+    "static/media/Bloom.jpeg": "/memory-card/static/media/Bloom.9e6485bcf89189458e9c.jpeg",
+    "static/media/Tritannus.jpeg": "/memory-card/static/media/Tritannus.faa0b77b8d7cafd78d73.jpeg",
+    "static/media/Nereus.jpeg": "/memory-card/static/media/Nereus.9b5ce3ff05162364590f.jpeg",
+    "static/media/riven.jpeg": "/memory-card/static/media/riven.3178096953274e4036f6.jpeg",
+    "static/media/Griffin.jpeg": "/memory-card/static/media/Griffin.28ed40b50ded16550737.jpeg",
+    "static/media/timmy.jpeg": "/memory-card/static/media/timmy.9efdfbae15f1eb189576.jpeg",
+    "static/media/Niobe.jpeg": "/memory-card/static/media/Niobe.eb98ee13d548b6db36c5.jpeg",
+    "static/media/brandon.jpeg": "/memory-card/static/media/brandon.3fbbe897f0f178a0089e.jpeg",
+    "index.html": "/memory-card/index.html",
+    "main.0c91cc49.css.map": "/memory-card/static/css/main.0c91cc49.css.map",
+    "main.9b6b50c1.js.map": "/memory-card/static/js/main.9b6b50c1.js.map",
+    "787.d6a8b40f.chunk.js.map": "/memory-card/static/js/787.d6a8b40f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c91cc49.css",
+    "static/js/main.9b6b50c1.js"
+  ]
+}

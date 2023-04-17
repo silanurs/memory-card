@@ -28,30 +28,30 @@ const Game = () => {
     const [score, setScore] = useState(0);
     const [bestScore, setBestScore] = useState(0);
     const [images, setImages ]= useState([
-        {id:1,src:Aisha, text:"Aisha"}, 
-        {id:2, src:Bloom, text:"Bloom"}, 
-        {id:3, src:Brandon, text:"Brandon"}, 
-        {id:4, src:Darcy, text:"Darcy"}, 
-        {id:5, src:Flora, text:"Flora"}, 
-        {id:6, src:Griffin, text:"Griffin"}, 
-        {id:7, src:Helia, text:"Helia"}, 
-        {id:8, src:Kiko, text:"Kiko"}, 
-        {id:9, src:Layla, text:"Layla"},
-        {id:10, src:Musa, text:"Musa"}, 
-        {id:11, src:Nebula, text:"Nebula"}, 
-        {id:12, src:Nereus, text:"Nereus"}, 
-        {id:13, src:Niobe, text:"Niobe"}, 
-        {id:14, src:Luna, text:"Luna"}, 
-        {id:15, src:Marion, text:"Marion"}, 
-        {id:16, src:Riven, text:"Riven"}, 
-        {id:17, src:Roxy, text:"Roxy"}, 
-        {id:18, src:Sky, text:"Sky"}, 
-        {id:19, src:Stella, text:"Stella"}, 
-        {id:20, src:Stromy, text:"Stromy"}, 
-        {id:21, src:Tecna, text:"Tecna"}, 
-        {id:22, src:Timmy, text:"Timmy"}, 
-        {id:23, src:Tritannus, text:"Tritannus"},
-        {id:24 ,src:Acheron, text:"Acheron"}
+        {id:1,src:Aisha, text:"Aisha", isClicked:false}, 
+        {id:2, src:Bloom, text:"Bloom", isClicked:false}, 
+        {id:3, src:Brandon, text:"Brandon", isClicked:false}, 
+        {id:4, src:Darcy, text:"Darcy", isClicked:false}, 
+        {id:5, src:Flora, text:"Flora", isClicked:false}, 
+        {id:6, src:Griffin, text:"Griffin", isClicked:false}, 
+        {id:7, src:Helia, text:"Helia", isClicked:false}, 
+        {id:8, src:Kiko, text:"Kiko", isClicked:false}, 
+        {id:9, src:Layla, text:"Layla", isClicked:false},
+        {id:10, src:Musa, text:"Musa", isClicked:false}, 
+        {id:11, src:Nebula, text:"Nebula", isClicked:false}, 
+        {id:12, src:Nereus, text:"Nereus", isClicked:false}, 
+        {id:13, src:Niobe, text:"Niobe", isClicked:false}, 
+        {id:14, src:Luna, text:"Luna", isClicked:false}, 
+        {id:15, src:Marion, text:"Marion", isClicked:false}, 
+        {id:16, src:Riven, text:"Riven", isClicked:false}, 
+        {id:17, src:Roxy, text:"Roxy", isClicked:false}, 
+        {id:18, src:Sky, text:"Sky", isClicked:false}, 
+        {id:19, src:Stella, text:"Stella", isClicked:false}, 
+        {id:20, src:Stromy, text:"Stromy", isClicked:false}, 
+        {id:21, src:Tecna, text:"Tecna", isClicked:false}, 
+        {id:22, src:Timmy, text:"Timmy", isClicked:false}, 
+        {id:23, src:Tritannus, text:"Tritannus", isClicked:false},
+        {id:24 ,src:Acheron, text:"Acheron", isClicked:false}
     ]);
         useEffect(()=>{
 
@@ -62,27 +62,36 @@ const Game = () => {
             const shuffledArray = [...images].sort(()=> Math.random()-0.5)
             setImages(shuffledArray)
         }
-        const handleImgClick = (id) => {
-            const selectedImg = images.find((img) => img.id === id);
-        
-            if (selectedImg) {
+    
+   
+        function handleImgClick(id){
+            const index = images.findIndex(obj => obj.id === id);
+            const clickedImg = images[index];
+            
+            if(clickedImg.isClicked){
+              setScore(0);
+              const resetImages = images.map((img) => {
+                img.isClicked = false;
+                return img;
+              });
+              setImages(resetImages);
+            } else{
               const newScore = score + 1;
               setScore(newScore);
-        
-            if (newScore > bestScore) {
+              clickedImg.isClicked = true;
+              const updatedImages = [...images];
+              updatedImages[index] = clickedImg;
+              setImages(updatedImages);
+              if(newScore > bestScore){
                 setBestScore(newScore);
-            }
-        
-              shuffleArray();
-            } else {
-            
-                setScore(score)
-            }
-          };
+              }
+            }  
+          }
+
     return  <div className="App">
         <Header currentScore={score} bestScore={bestScore}/>
          <div className="game">
-        {images.map((item)=>{return <div className="gallery" key={item.id} onClick={() => handleImgClick(item.id)}>
+        {images.map((item)=>{return <div className="gallery" key={item.id} id={item.id} onClick={() => handleImgClick(item.id)}>
             <img src={item.src} alt=""  ></img>
             <div className="desc" >{item.text}</div>
         </div>
