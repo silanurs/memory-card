@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memory-card/static/css/main.d6b47276.css",
+    "main.css": "/memory-card/static/css/main.280cf9dc.css",
     "main.js": "/memory-card/static/js/main.9b6b50c1.js",
     "static/js/787.d6a8b40f.chunk.js": "/memory-card/static/js/787.d6a8b40f.chunk.js",
     "static/media/stromy.png": "/memory-card/static/media/stromy.dbace6f52bb48b95c4f4.png",
@@ -29,12 +29,12 @@
     "static/media/Niobe.jpeg": "/memory-card/static/media/Niobe.eb98ee13d548b6db36c5.jpeg",
     "static/media/brandon.jpeg": "/memory-card/static/media/brandon.3fbbe897f0f178a0089e.jpeg",
     "index.html": "/memory-card/index.html",
-    "main.d6b47276.css.map": "/memory-card/static/css/main.d6b47276.css.map",
+    "main.280cf9dc.css.map": "/memory-card/static/css/main.280cf9dc.css.map",
     "main.9b6b50c1.js.map": "/memory-card/static/js/main.9b6b50c1.js.map",
     "787.d6a8b40f.chunk.js.map": "/memory-card/static/js/787.d6a8b40f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6b47276.css",
+    "static/css/main.280cf9dc.css",
     "static/js/main.9b6b50c1.js"
   ]
 }
